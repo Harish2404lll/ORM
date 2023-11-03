@@ -6,7 +6,9 @@ To develop a Django application to store and retrieve data from a Football Playe
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
+
+![image](https://github.com/Harish2404lll/ORM/assets/141472096/a71c85db-47bb-463c-8bf6-cfaaf492220a)
+
 
 ## DESIGN STEPS
 
@@ -23,8 +25,29 @@ Enter the code for admin.py and models.py
 Execute Django admin and create 10 Football players
 
 ## PROGRAM
+```
+File: Models.py
 
-Include your code here
+from django.db import models
+from django.contrib import admin
+
+class footballplayer (models.Model):
+    numofmatch=models.IntegerField()
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    height=models.IntegerField()
+
+class footballplayerAdmin(admin.ModelAdmin):
+    list_display=('numofmatch','name','salary','age','height')
+
+
+File: Admin.py
+
+from django.contrib import admin
+from .models import footballplayer,footballplayerAdmin
+admin.site.register(footballplayer,footballplayerAdmin)
+```
 
 ## OUTPUT
 
