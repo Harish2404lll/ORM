@@ -51,7 +51,8 @@ admin.site.register(footballplayer,footballplayerAdmin)
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![image](https://github.com/Harish2404lll/ORM/assets/141472096/afb699ff-10cd-458f-8152-7360ae82c477)
+
 
 
 ## RESULT
